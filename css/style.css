@@ -13,6 +13,7 @@
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  overflow-y: hidden scroll;
 }
 
 body {
@@ -46,7 +47,11 @@ body {
   color: var(--primary);
   font-style: italic;
 }
-
+.navbar .navbar-nav span {
+  color: var(--primary);
+  font-style: italic;
+  font-weight: 600;
+}
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
@@ -297,7 +302,7 @@ body {
 footer {
   background-color: var(--primary);
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0 3rem;
   margin-top: 3rem;
 }
 
@@ -316,13 +321,22 @@ footer .links a:hover {
 }
 
 footer .links {
-  padding: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 footer .links a {
   color: #f1f1f1;
   padding: 0.7rem 1rem;
-  text-align: center;
 }
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
 /* Media Queries */
 
 /* Laptop */
